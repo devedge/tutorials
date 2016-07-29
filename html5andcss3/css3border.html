@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSSS3 Border</title>
+    </head>
+
+    <style>
+        /* make rounded corners */
+        #border_radius
+        {
+            border:2px solid;
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px;
+            background: #6AAFCF;
+            border-radius: 25px;
+            -moz-border-radius: 25px;
+            -webkit-border-radius: 25px;
+            -o-border-radius: 25px;
+        }
+
+        /* create the shadow of the borders */
+        #box_shadow
+        {
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 10px;
+            background: #6AAFCF;
+            -moz-box-shadow: 15px 15px 5px #888245;
+            -webkit-box-shadow: 15px 15px 5px #888245;
+            -o-box-shadow: 15px 15px 5px #888245;
+            box-shadow: 15px 15px 5px #888245;
+        }
+
+        /* create a customized border or use an image as a border */
+        #border_image
+        {
+            border-width: 15px;
+            -moz-border-image:url(media/border.png) 30 30 round;
+            -webkit-border-image:url(media/border.png) 30 30 round;
+            -o-border-image:url(media/border.png) 30 30 round;
+            border-image:url(media/border.png) 30 30 round;
+        }
+    </style>
+
+    <body>
+        <div id="border_radius">
+            With the help of border-radius properties, we can make the rounded corners border.
+        </div>
+
+        <div id="box_shadow">
+            With the help of box-shadow properties, we can create the shadow for a box.
+        </div>
+
+        <div id="border_image">
+            You can see the customized border. This could be either *.png or *.jpg format.
+        </div>
+    </body>
+</html>
